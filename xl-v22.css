@@ -1,0 +1,57 @@
+/* Ximena + Lore | Alcances reales + glosario integrado | 2026-10-29 */
+.xl22-scope-details{border-top:1px solid #cdd6cb;margin-top:17px;padding-top:13px;display:grid;gap:10px}
+.xl22-scope-details .xl22-detail-label{display:block;color:#8e4c37;font:700 10px/1.4 "DM Mono",monospace;letter-spacing:.045em;text-transform:uppercase;margin-bottom:3px}
+.xl22-scope-details .xl22-detail-value{font:500 12px/1.55 "Manrope",system-ui,sans-serif;color:#314a3a}
+.xl22-scope-details .xl22-scope-note{font:500 11px/1.5 "Manrope",system-ui,sans-serif;color:#58695b;margin-top:3px}
+.xl22-full-details{border-top:1px solid rgba(64,85,74,.17);margin-top:13px;padding-top:11px;display:grid;gap:11px}
+.xl22-full-details div{display:grid;gap:4px}
+.xl22-full-details b{font:750 11px/1.35 "Manrope",system-ui,sans-serif;color:#8d4e3a}
+.xl22-full-details span{font:500 12px/1.55 "Manrope",system-ui,sans-serif;color:#364b3c}
+.xl22-gloss-link{border:0;background:transparent;text-align:left;padding:9px 0 0;color:#9c5039;text-decoration:underline;text-underline-offset:4px;font:700 12px/1.5 "Manrope",system-ui,sans-serif}
+.xl22-crosslink{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0 4px}
+.xl22-crosslink strong{font:600 12px/1.5 "Manrope",system-ui,sans-serif;color:#4e6454}
+.xl22-crosslink button{border:1px solid #c6cec4;background:#fdfbf6;color:#304b3e;padding:8px 11px;font:700 12px "Manrope",system-ui,sans-serif}
+.xl22-crosslink button:hover{border-color:#a65334;color:#a65334}
+.xl22-glossary-view{background:#f6f3ec;min-height:70vh;padding:52px 0 72px}
+.xl22-glossary-head{display:grid;grid-template-columns:1.35fr .8fr;gap:32px;align-items:end;border-bottom:1px solid #cdd5ca;padding-bottom:25px;margin-bottom:24px}
+.xl22-glossary-head .xl22-eyebrow{color:#a65334;font:700 11px/1.4 "DM Mono",monospace;letter-spacing:.1em}
+.xl22-glossary-head h2{font:600 clamp(34px,5vw,68px)/1.04 "Syne","Trebuchet MS",sans-serif;letter-spacing:-.06em;margin:13px 0 0;color:#293e34}
+.xl22-glossary-head h2 em{font:italic 400 1.02em "Instrument Serif",Georgia,serif;color:#a65334}
+.xl22-glossary-head p{max-width:390px;font:500 14px/1.75 "Manrope",system-ui,sans-serif;color:#526456;margin:0}
+.xl22-gloss-tools{display:flex;justify-content:space-between;align-items:center;gap:13px;flex-wrap:wrap;margin:15px 0 22px}
+.xl22-filters{display:flex;flex-wrap:wrap;gap:6px}
+.xl22-filter{border:1px solid #ccd4c9;background:#fffaf4;color:#3f594a;padding:10px 12px;font:700 11px/1.3 "Manrope",system-ui,sans-serif}
+.xl22-filter[aria-pressed="true"]{background:#304b3c;color:white;border-color:#304b3c}
+.xl22-search{border:1px solid #bdc9bf;background:#fffdfa;border-radius:0;min-height:42px;width:min(100%,310px);padding:10px 13px;font:500 13px "Manrope",system-ui,sans-serif;color:#293f34}
+.xl22-terms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;align-items:start}
+.xl22-term{background:#fffcf7;border:1px solid #cfd5cb;min-width:0}
+.xl22-term[open]{border-color:#7c9582;box-shadow:0 14px 30px rgba(38,53,46,.07)}
+.xl22-term summary{display:flex;gap:13px;align-items:flex-start;cursor:pointer;list-style:none;padding:18px 20px}
+.xl22-term summary::-webkit-details-marker{display:none}
+.xl22-term-no{font:600 12px "DM Mono",monospace;color:#a65334;padding-top:2px}
+.xl22-term-text{display:grid;gap:5px;flex:1;min-width:0}
+.xl22-term-text small{font:700 10px "DM Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:#667d6b}
+.xl22-term-text strong{font:750 clamp(16px,1.8vw,22px)/1.2 "Syne",sans-serif;letter-spacing:-.035em;color:#293e34}
+.xl22-term-text span{font:500 12px/1.55 "Manrope",sans-serif;color:#5d705f}
+.xl22-term-plus{font:400 27px/1 "Instrument Serif",serif;color:#a65334}
+.xl22-term[open] .xl22-term-plus{transform:rotate(45deg)}
+.xl22-term-body{padding:0 20px 20px;border-top:1px solid #e6e7de}
+.xl22-term-definition{margin:16px 0;font:500 13px/1.75 "Manrope",sans-serif;color:#385143}
+.xl22-term-lanes{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.xl22-term-lane{background:#edf0e9;padding:13px}
+.xl22-term-lane:last-child{background:#f6e9e0}
+.xl22-term-lane b{display:block;margin-bottom:6px;color:#334f40;font:750 11px "Manrope",sans-serif}
+.xl22-term-lane:last-child b{color:#924f37}
+.xl22-term-lane p{font:500 11px/1.6 "Manrope",sans-serif;color:#3e5547;margin:0}
+.xl22-term-footer{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 16px}
+.xl22-term-footer b{display:block;font:750 10px/1.4 "DM Mono",monospace;color:#a65334;text-transform:uppercase;margin-bottom:5px}
+.xl22-term-footer span{display:block;font:500 11px/1.55 "Manrope",sans-serif;color:#4a6250}
+.xl22-term-cta{border:0;border-bottom:1px solid #a65334;color:#9b4d35;background:transparent;font:750 11px/1.5 "Manrope",sans-serif;text-align:left;padding:5px 0}
+.xl22-glossary-outro{margin-top:23px;padding:25px 28px;background:#30493a;color:#fefbf4;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.xl22-glossary-outro h3{font:400 clamp(23px,3vw,32px)/1.1 "Instrument Serif",serif;margin:0 0 5px}
+.xl22-glossary-outro p{font:500 12px/1.6 "Manrope",sans-serif;margin:0;color:#dbe8da}
+.xl22-glossary-outro button{border:1px solid #e6efe5;color:#2e4937;background:#fffaf4;font:800 12px "Manrope",sans-serif;padding:12px 15px;flex-shrink:0}
+.xl22-empty{padding:30px;background:#fffcf7;color:#5d6e60}
+@media(max-width:1100px){.main-nav .nav-btn{padding-left:7px;padding-right:7px}.xl22-scope-details{gap:8px}}
+@media(max-width:800px){.xl22-glossary-head{grid-template-columns:1fr;gap:13px}.xl22-terms{grid-template-columns:1fr}.xl22-term-text strong{font-size:21px}}
+@media(max-width:570px){.xl22-glossary-view{padding:30px 0 52px}.xl22-glossary-head h2{font-size:38px}.xl22-gloss-tools{align-items:stretch}.xl22-filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.xl22-filter{padding:10px 7px}.xl22-search{width:100%;max-width:none}.xl22-term summary{padding:16px}.xl22-term-body{padding:0 16px 17px}.xl22-term-lanes{grid-template-columns:1fr}.xl22-glossary-outro{flex-direction:column;align-items:start;padding:22px}.xl22-glossary-outro button{width:100%}}
