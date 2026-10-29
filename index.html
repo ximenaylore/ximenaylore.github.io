@@ -730,6 +730,24 @@ html.xl18-registered .xl18-email-checkpoint{display:none}html.xl18-registered .x
 .xl19-teaser-card .xl20-teaser-unit{display:block;font:600 9px/1.4 'DM Mono',monospace;color:#657469;letter-spacing:0;margin-bottom:12px}
 .xl20-price-context{font-size:11px;line-height:1.55;color:#536151;margin:13px 2px 4px;max-width:660px}
 @media(max-width:620px){.xl20-hero-price{margin-top:12px;font-size:11px;padding:11px}.xl19-teaser-card .xl20-teaser-price{font-size:29px;margin-top:5px}.xl19-teaser-card .xl20-teaser-unit{margin-bottom:7px}.xl20-price-context{font-size:10px}}
+
+/* V2.1 · Clear scope comparison, no approximation glyphs */
+.xl19-teaser-card{min-height:0;gap:0;padding:18px 16px 17px}
+.xl19-teaser-card h5{font-size:29px;margin:8px 0 12px}
+.xl19-teaser-card .xl21-price-label{font:750 9px/1.4 'DM Mono',monospace;letter-spacing:.08em;color:#536456;border:0;padding:0;margin-bottom:1px}
+.xl19-teaser-card .xl20-teaser-price{font-size:clamp(25px,2.1vw,30px);letter-spacing:-.055em;margin:0}
+.xl19-teaser-card .xl20-teaser-unit{font:600 10px/1.5 'DM Mono',monospace;color:#657469;margin-bottom:12px}
+.xl19-teaser-card .xl21-why{font:500 12px/1.55 'Manrope',sans-serif;color:#405247;margin:0 0 15px;min-height:56px}
+.xl19-teaser-card .xl21-includes-label{font:800 10px/1.2 'Manrope',sans-serif;color:#2f4b3e;padding:12px 0 7px;border-top:1px solid #c6d0c5}
+.xl21-includes{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.xl21-includes li{font:500 11px/1.45 'Manrope',sans-serif;color:#526455;display:flex;align-items:flex-start;gap:8px}
+.xl21-includes li::before{content:'';flex:none;width:5px;height:5px;margin-top:5px;border-radius:50%;background:#b65a39}
+.xl21-how-priced{display:grid;grid-template-columns:155px 1fr;gap:18px;border-top:1px solid #c8d1c6;padding:15px 1px 13px;margin-top:16px;align-items:start}
+.xl21-how-label{font:750 10px/1.5 'DM Mono',monospace;letter-spacing:.035em;color:#95513c}
+.xl21-how-priced p{font:500 12px/1.65 'Manrope',sans-serif;color:#4d6253;margin:0}
+.xl19-teaser-cta{margin-top:4px;font-size:13px;gap:9px;line-height:1.4}
+@media(max-width:850px){.xl19-teaser-card .xl21-why{min-height:0}}
+@media(max-width:620px){.xl19-teaser-card{padding:17px 15px}.xl19-teaser-card h5{font-size:27px;margin:6px 0 10px}.xl19-teaser-card .xl20-teaser-price{font-size:30px}.xl19-teaser-card .xl21-why{font-size:12px;margin-bottom:12px}.xl19-teaser-card .xl21-includes-label{padding-top:10px}.xl21-includes li{font-size:12px}.xl21-how-priced{grid-template-columns:1fr;gap:5px;margin-top:12px}.xl19-teaser-cta{padding:15px}}
 </style>
 <script>
 (function(){
@@ -765,7 +783,7 @@ html.xl18-registered .xl18-email-checkpoint{display:none}html.xl18-registered .x
       <div class="neo-kicker"><span class="pulse-dot" aria-hidden="true"></span> DOS CONSULTORAS · TU MARCA, TU RITMO</div>
       <h1 id="home-title" class="neo-display">Que tu marca<br><span class="neo-type-ital">conecte.</span> <span class="neo-line3">Y <em>tenga impacto.</em></span></h1>
       <p class="neo-lede">Puedes empezar por una idea, una campaña o tres meses de trabajo. <strong>Tú marcas qué necesitas y cuánto quieres abarcar. Nosotras ponemos experiencia y manos a la obra, sin venderte más de la cuenta.</strong></p>
-      <div class="neo-buttons"><button type="button" class="neo-btn neo-btn-dark" data-nav="problemas">Cuéntanos qué necesitas <span>↗</span></button><button type="button" class="neo-btn neo-btn-line" data-nav="diagnostico">Diseña tu brief <span>↗</span></button><button type="button" class="neo-text-link" data-nav="contacto">O hablemos directamente ↗</button></div><button type="button" class="xl20-hero-price" data-nav="diagnostico"><span aria-hidden="true">◎</span> Mira rangos de inversión sin dejar tu correo <b>↗</b></button>
+      <div class="neo-buttons"><button type="button" class="neo-btn neo-btn-dark" data-nav="problemas">Cuéntanos qué necesitas <span>↗</span></button><button type="button" class="neo-btn neo-btn-line" data-nav="diagnostico">Diseña tu brief <span>↗</span></button><button type="button" class="neo-text-link" data-nav="contacto">O hablemos directamente ↗</button></div><button type="button" class="xl20-hero-price" data-nav="diagnostico"><span aria-hidden="true">◎</span> Explora estimaciones sin dejar tu correo <b>↗</b></button>
       
     </div>
     <div class="neo-canvas" aria-label="Diagrama tipográfico de estrategia, personas y conexiones, sin fotografías">
@@ -889,7 +907,7 @@ html.xl18-registered .xl18-email-checkpoint{display:none}html.xl18-registered .x
   </section>
 
   <section class="view quote-screen" id="diagnostico" data-view="diagnostico" aria-labelledby="quote-title" hidden>
-    <div class="container"><div class="page-head"><div><span class="overline muted">05 / Diagnóstico & exploración de alcance</span><h2 class="display" id="quote-title">Diseña un primer<br><span class="accent">punto de partida.</span></h2></div><p>Cuéntanos qué tienes en mente. Puedes empezar con algo pequeño, una campaña o un acompañamiento mensual. Mira primero tres caminos posibles; si quieres ver rangos y entregables, te pediremos un solo dato: tu email.</p></div>
+    <div class="container"><div class="page-head"><div><span class="overline muted">05 / Diagnóstico & exploración de alcance</span><h2 class="display" id="quote-title">Diseña un primer<br><span class="accent">punto de partida.</span></h2></div><p>Cuéntanos qué tienes en mente. Puedes empezar con algo pequeño, una campaña o un acompañamiento mensual. Explora tres formas de hacerlo, con estimaciones visibles desde el principio. Si te gusta alguna, compartes tu email y aterrizamos juntos los entregables. Tú decides cómo seguir.</p></div>
       <div class="quote-layout">
 <div class="quote-panel">
           <div class="step-track" aria-label="Etapas del diagnóstico"><button data-step-jump="1" aria-current="step">01 · Momento</button><button data-step-jump="2">02 · Disciplinas</button><button data-step-jump="3">03 · Primera vista</button><button data-step-jump="4">04 · El detalle</button></div>
@@ -915,16 +933,18 @@ html.xl18-registered .xl18-email-checkpoint{display:none}html.xl18-registered .x
               <div class="form-row"><label class="field"><span class="label">Tamaño del equipo <span class="muted">(contexto, no tarifa)</span></span><select id="team-size" name="teamSize"><option value="unknown">Prefiero no decirlo</option><option value="small">1–20 personas</option><option value="medium">21–100 personas</option><option value="large">Más de 100 personas</option></select></label><label class="field"><span class="label">Stakeholders / aprobaciones</span><select id="approvals" name="approvals"><option value="simple">Una persona o equipo pequeño</option><option value="some">Varios equipos o áreas</option><option value="complex">Múltiples países / aprobación compleja</option></select></label></div>
               <div class="form-row"><label class="field"><span class="label">Tipo de empresa / sector <span class="muted">(opcional)</span></span><input id="sector" name="sector" maxlength="100" placeholder="Ej. SaaS, retail, automotriz"></label><label class="field"><span class="label">Mercado principal <span class="muted">(opcional)</span></span><input id="market" name="market" maxlength="90" placeholder="Ej. México, España"></label></div>
               </div></details> <section class="xl19-teaser" aria-labelledby="xl19-teaser-title">
- <div class="xl19-teaser-heading"><div><span class="overline">ALCANCES Y PRECIOS · SIN REGISTRO</span><h4 id="xl19-teaser-title">Tres maneras de empezar. Con números.</h4><p>Mira cuánto podría costar cada nivel según lo que elegiste. No tienes que dejar tu email para saber si te encaja.</p></div><span class="xl19-preview-stamp">NO ES UN PAQUETE CERRADO ✳</span></div>
- <div class="xl19-teaser-grid" id="xl19-teaser-grid" aria-live="polite"></div><p class="xl20-price-context">No son paquetes cerrados ni tarifas aprobadas: son referencias calculadas a partir del alcance elegido. Podemos empezar con un solo frente, en vez de contratar una estructura completa. Pauta, producción, derechos y proveedores externos se cotizan aparte.</p>  <button type="button" class="xl19-teaser-cta" id="xl19-unlock-cta">¿Quieres ver qué incluye cada opción? <span>↘</span></button>
+ <div class="xl19-teaser-heading"><div><span class="overline">ALCANCES Y PRECIOS · SIN REGISTRO</span><h4 id="xl19-teaser-title">Tres maneras de hacerlo. Tú eliges.</h4><p>Una primera estimación para cada alcance, con ejemplos de lo que podría incluir. Puedes comparar sin dejar tu correo.</p></div><span class="xl19-preview-stamp">NO ES UN PAQUETE CERRADO ✳</span></div>
+ <div class="xl19-teaser-grid" id="xl19-teaser-grid" aria-live="polite"></div>
+ <div class="xl21-how-priced"><span class="xl21-how-label">¿POR QUÉ CAMBIA LA INVERSIÓN?</span><p>Porque cambia el trabajo: las disciplinas, las piezas, el ritmo, la duración o los mercados. No porque nos digas que tienes más presupuesto. Esto es una <strong>estimación orientativa</strong>, no una cotización ni un paquete cerrado. Pauta, producción, derechos y proveedores se consideran aparte.</p></div>
+ <button type="button" class="xl19-teaser-cta" id="xl19-unlock-cta">Ya tienes un punto de partida. Sigamos con tu idea. <span>↘</span></button>
  </section><div class="xl18-email-checkpoint" id="xl18-email-checkpoint" aria-labelledby="xl18-email-title">
-                <div class="xl18-email-header"><span class="overline">EL SIGUIENTE PASO ES TUYO</span><h4 id="xl18-email-title">¿Qué entraría en ese rango?</h4><p>Ya viste los números. Deja solo tu email para comparar entregables y afinar las tres propuestas aquí mismo. Sin compromiso de contratación.</p></div>
-                <div class="xl18-form-shell"><iframe id="xl18-tally-frame" title="Tu email, último paso antes de ver los tres escenarios" src="https://tally.so/embed/LDDLbG?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" width="100%" height="525" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="xl18-tally-help">Si el formulario no carga, actualiza la página o <a href="mailto:ximena.aguirre.rdz@gmail.com">escríbenos</a> te ayudamos por correo.</p></div>
+                <div class="xl18-email-header"><span class="overline">VAMOS UN POCO MÁS ALLÁ</span><h4 id="xl18-email-title">Ya empezaste. Vamos a darle forma.</h4><p>Compártenos tu email y abre aquí mismo el detalle de las tres opciones: qué podríamos hacer, cómo lo organizaríamos y qué te conviene priorizar. No necesitas agendar una llamada ni contratar nada.</p></div>
+                <div class="xl18-form-shell"><iframe id="xl18-tally-frame" title="Tu email, último paso antes de ver los tres escenarios" src="https://tally.so/embed/LDDLbG?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" width="100%" height="525" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="xl18-tally-help">Si el formulario no carga, <a href="mailto:ximena.aguirre.rdz@gmail.com">escríbenos directamente</a> y te ayudamos.</p></div>
                 <p class="xl18-email-status" id="xl18-email-status" role="status">El email se registra al pulsar «Ver mis 3 escenarios». No te suscribimos a newsletters; el permiso para recibir un recordatorio sobre este brief es opcional. <a href="/privacidad.html" target="_blank" rel="noopener noreferrer">Privacidad</a>.</p>
               </div>
               <p class="xl18-registered-note" id="xl18-registered-note" hidden role="status">✓ Tu email está registrado. Vamos a ver los tres escenarios, con sus rangos y entregables.</p>
             </div>
-            <div class="wizard-step" data-step="4" hidden><div class="overline muted">Paso 04 / Compara alternativas</div><h3>Tres caminos posibles.</h3><p>Aquí van los detalles de las tres posibilidades, con rangos ilustrativos. Cambia lo que quieras y vuelve a comparar; nada es definitivo.</p><div class="quote-estimate-hero" id="quote-estimate-hero" aria-live="polite"><div class="quote-estimate-kicker">TRES ESCENARIOS DE INVERSIÓN · SIMULACIÓN</div><div class="quote-estimate-number" id="quote-estimate-number">Tu brief está listo</div><div class="quote-estimate-unit" id="quote-estimate-unit">Según las respuestas que compartiste</div><p id="quote-estimate-copy">No es una tarifa cerrada. Hablemos para definir entregables, calendario y alcance.</p><button type="button" class="estimate-chat" id="estimate-chat">Pide tu estimación · Hablemos <span aria-hidden="true">↗</span></button></div><div class="result-intro" aria-live="polite"><strong id="recommend-title"></strong><p id="recommend-text"></p></div><div class="estimate-status" id="estimate-status" role="status"></div><div class="tier-grid" id="tier-grid"></div><p class="exclude" id="result-exclude"></p><div class="disclaimer">Simulación exploratoria, no una tarifa oficial ni una oferta. Los importes se calculan a partir de esfuerzos de referencia provisionales y requieren validación comercial de ambas consultoras. Creators, derechos de uso, pauta, producción, viajes y especialistas externos se cotizan aparte.</div><div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:14px"><button class="pill deep small-pill" type="button" id="export-summary">Exportar resumen ↓</button><button class="pill primary small-pill" type="button" id="email-summary">Compartir por email ↗</button></div><div class="quote-conversation"><span class="overline">Nada está escrito en piedra.</span><h4>¿Tenías otra cosa en mente?</h4><p>¿Quieres ajustar el alcance, negociar una alternativa o proponernos algo distinto? Hablemos.</p><button type="button" class="pill primary" id="quote-negotiate">Cuéntanos tu idea ↗</button></div></div>
+            <div class="wizard-step" data-step="4" hidden><div class="overline muted">Paso 04 / Compara alternativas</div><h3>Tres maneras de avanzar.</h3><p>Ya tienes un punto de partida. Aquí va el detalle de cada alcance y su inversión estimada. Puedes ajustar lo que quieras; no son paquetes cerrados.</p><div class="quote-estimate-hero" id="quote-estimate-hero" aria-live="polite"><div class="quote-estimate-kicker">TRES ESCENARIOS DE INVERSIÓN · SIMULACIÓN</div><div class="quote-estimate-number" id="quote-estimate-number">Tu brief está listo</div><div class="quote-estimate-unit" id="quote-estimate-unit">Según las respuestas que compartiste</div><p id="quote-estimate-copy">No es una tarifa cerrada. Hablemos para definir entregables, calendario y alcance.</p><button type="button" class="estimate-chat" id="estimate-chat">Pide tu estimación · Hablemos <span aria-hidden="true">↗</span></button></div><div class="result-intro" aria-live="polite"><strong id="recommend-title"></strong><p id="recommend-text"></p></div><div class="estimate-status" id="estimate-status" role="status"></div><div class="tier-grid" id="tier-grid"></div><p class="exclude" id="result-exclude"></p><div class="disclaimer">Simulación exploratoria, no una tarifa oficial ni una oferta. Los importes se calculan a partir de esfuerzos de referencia provisionales y requieren validación comercial de ambas consultoras. Creators, derechos de uso, pauta, producción, viajes y especialistas externos se cotizan aparte.</div><div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:14px"><button class="pill deep small-pill" type="button" id="export-summary">Exportar resumen ↓</button><button class="pill primary small-pill" type="button" id="email-summary">Compartir por email ↗</button></div><div class="quote-conversation"><span class="overline">Nada está escrito en piedra.</span><h4>¿Tenías otra cosa en mente?</h4><p>¿Quieres ajustar el alcance, negociar una alternativa o proponernos algo distinto? Hablemos.</p><button type="button" class="pill primary" id="quote-negotiate">Cuéntanos tu idea ↗</button></div></div>
             <div class="wizard-actions"><button type="button" class="pill small-pill" id="wizard-back" disabled>← Volver</button><div class="controls"><button type="reset" class="pill small-pill" id="wizard-reset">Reiniciar</button><button type="button" class="pill primary" id="wizard-next">Continuar →</button></div></div>
           </form>
         </div>
@@ -977,8 +997,7 @@ const problems=[
  {label:'Tenemos presencia, pero no un mensaje claro',headline:'Una idea coherente, incluso cuando cambia el canal.',body:'Podemos revisar cómo se cuenta la marca en medios, web, social y conversaciones comerciales para elegir qué sostener, qué ajustar y qué dejar de hacer.',services:['Narrativa y posicionamiento','Contenido y canales propios','Liderazgo y reputación'],goal:'Necesitamos una narrativa y posicionamiento coherentes.'},
  {label:'Queremos trabajar con creators, pero con criterio',headline:'Menos nombres por moda. Más pertinencia para la marca.',body:'Partimos de la audiencia y de lo que el producto debe demostrar. El mix de perfiles, briefs, derechos, contenido y medición se define según la estrategia.',services:['Influencer marketing','UGC y social','Contenido y canales propios'],goal:'Queremos diseñar un programa de creators e influencer marketing.'},
  {label:'Necesitamos mejorar reputación y confianza',headline:'Que las promesas encuentren pruebas y voces creíbles.',body:'Pensamos en stakeholders, liderazgo, mensajes y escenarios sensibles. El trabajo puede centrarse en PR, comunicación corporativa, voceros o comunicación interna.',services:['Liderazgo y reputación','PR y medios','Comunicación interna'],goal:'Queremos reforzar reputación, vocería y confianza.'},
- {label:'Tenemos equipo y canales, pero no logramos avanzar',headline:'Un plan ejecutable que priorice lo que sí mueve el negocio.',body:'Revisamos las prioridades y el trabajo existente, conectamos comunicación con GTM, contenido, partners y medición, y acordamos un alcance compatible con recursos reales.',services:['GTM y lanzamientos','Eventos y experiencias','Partnerships y alianzas','Contenido y canales propios'],goal:'Queremos alinear comunicación y ejecución con nuestras prioridades de negocio.'}
-];
+ {label:'Tenemos equipo y canales, pero no logramos avanzar',headline:'Un plan ejecutable que priorice lo que sí mueve el negocio.',body:'Revisamos las prioridades y el trabajo existente, conectamos comunicación con GTM, contenido, partners y medición, y acordamos un alcance compatible con recursos reales.',services:['GTM y lanzamientos','Eventos y experiencias','Partnerships y alianzas','Contenido y canales propios'],goal:'Queremos alinear comunicación y ejecución con nuestras prioridades de negocio.'}];
 let activeProblem=0;
 function renderProblems(){const list=$('problem-list');list.replaceChildren(...problems.map((p,i)=>{let b=document.createElement('button');b.type='button';b.className='problem-choice';b.setAttribute('aria-pressed',String(i===activeProblem));b.innerHTML='<span></span><small>0'+(i+1)+' · ↗</small>';b.querySelector('span').textContent=p.label;b.addEventListener('click',()=>{activeProblem=i;renderProblems()});return b}));const p=problems[activeProblem];$('problem-detail-title').textContent=p.headline;$('problem-detail-body').textContent=p.body;$('problem-pills').replaceChildren(...p.services.map(s=>{let e=document.createElement('span');e.textContent=s;return e}));}
 $('problem-plan').addEventListener('click',()=>{$('goal').value=problems[activeProblem].goal;gotoStep(1);navigate('diagnostico')});
@@ -997,7 +1016,8 @@ function renderMethod(){
  const left=document.createElement('div');left.className='method-reveal-head';left.innerHTML='<span class="overline">PASO '+String(activeMethod+1).padStart(2,'0')+' / 06</span><h4></h4><p></p>';left.querySelector('h4').textContent=m.question;left.querySelector('p').textContent=m.meaning;
  const right=document.createElement('div');right.className='method-reveal-right';[['QUÉ TRABAJAMOS',m.work],['CON QUÉ SALES',m.output],['EJEMPLO',m.example]].forEach(([label,body])=>{const div=document.createElement('div');div.innerHTML='<strong></strong><span></span>';div.querySelector('strong').textContent=label;div.querySelector('span').textContent=body;right.append(div)});
   area.append(left,right);
-  $('method-progress-text').textContent=String(activeMethod+1).padStart(2,'0')+' DE 06';  $('method-progress-fill').style.width=((activeMethod+1)/method.length*100)+'%';
+  $('method-progress-text').textContent=String(activeMethod+1).padStart(2,'0')+' DE 06';
+  $('method-progress-fill').style.width=((activeMethod+1)/method.length*100)+'%';
   $('method-prev').disabled=activeMethod===0;
   $('method-next').textContent=activeMethod===5?'VOLVER AL INICIO ↻':'SIGUIENTE ETAPA →';
  }
@@ -1147,7 +1167,7 @@ function gotoStep(n){
  if(requested===4&&!hasBriefEmail()){
    const target=document.getElementById('xl18-email-checkpoint');
    const status=document.getElementById('xl18-email-status');
-   if(status){status.textContent='Los importes ya están arriba. Deja solo tu email para abrir el desglose de entregables y seguir ajustando tu propuesta aquí mismo.';}
+   if(status){status.textContent='Ya viste tres estimaciones y qué podría entrar en cada alcance. Comparte tu email para abrir el desglose y ajustar tu propuesta aquí mismo.';}
    if(target&&document.querySelector('#diagnostico')&&!document.querySelector('#diagnostico').hidden){
      requestAnimationFrame(()=>target.scrollIntoView({block:'start',behavior:'smooth'}));
    }
@@ -1167,23 +1187,46 @@ function readQuote(){const f=$('quote-form');const raw=$('budget').value.trim();
 function renderScopePreview(){
  const grid=document.getElementById('xl19-teaser-grid');if(!grid)return;
  const d=readQuote(),chosen=d.services.map(id=>services.find(s=>s.id===id)?.name).filter(Boolean);
- // Use the exact same scenario values as the unlocked detail; never adjust for declared budget.
+ // Same computed amounts as the detailed scenarios, without using the visitor's stated budget to change pricing.
  const preview=scopeScenarios(d);
- const unit=({retainer:'por mes',campaign:'por campaña',project:'por proyecto',advisory:'por asesoría'})[d.model]||'por proyecto';
- const main=chosen[0]||'tu mensaje y prioridades';
- const second=chosen[1]||'contenido propio';
- const mode=({retainer:'mes a mes',project:'en un proyecto concreto',campaign:'durante una campaña',advisory:'en una sesión puntual'})[d.model];
- const data=[
-   {tag:'01 / MENOS, PERO BIEN',title:'Enfocado',text:`Un primer paso con ${main.toLowerCase()}, ${mode}. Una prioridad y entregables definidos.`,bullet:'Un frente claro'},
-   {tag:'02 / SI HACE FALTA MÁS',title:'Conectado',text:`Coordinamos ${main.toLowerCase()} con ${second.toLowerCase()} cuando tenga sentido. Sin sumar canales por inercia.`,bullet:'Dos frentes que se ayudan'},
-   {tag:'03 / UN PLAN POR FASES',title:'Expandido',text:'Si necesitas varios entregables, equipos o mercados, organizamos el trabajo por fases y recursos.',bullet:'Más capacidad, no más ruido'}
+ const unit=({retainer:'al mes',campaign:'por campaña',project:'por proyecto',advisory:'por asesoría'})[d.model]||'por proyecto';
+ const ids=d.services.length?d.services:['narrativa'];
+ const ranked=[...ids].sort((a,b)=>(PUBLIC_SCENARIO_EFFORT[b]||15)-(PUBLIC_SCENARIO_EFFORT[a]||15));
+ const shortNames={linkedin:'LinkedIn',digital:'redes y canales digitales',narrativa:'posicionamiento',pr:'relaciones públicas',reputacion:'reputación y liderazgo',creators:'creators',ugc:'UGC y social',contenido:'contenido propio',gtm:'lanzamiento',eventos:'eventos',partnerships:'alianzas'};
+ const main=shortNames[ranked[0]]||chosen[0]||'estrategia y mensaje';
+ const second=ranked[1]?(shortNames[ranked[1]]||chosen[1]):null;
+ const isAdvisory=d.model==='advisory';
+ const actions=isAdvisory?['Una sesión para ordenar el reto','Una hoja de ruta con próximos pasos'] : [
+   'Objetivo, mensaje y prioridades',`Una acción concreta en ${main.toLowerCase()}`
  ];
- grid.replaceChildren(...data.map((item,i)=>{const a=document.createElement('article');a.className='xl19-teaser-card';const b=document.createElement('small');b.textContent=item.tag;const h=document.createElement('h5');h.textContent=item.title;const p=document.createElement('p');p.textContent=item.text;const f=document.createElement('span');f.textContent=item.bullet;const range=preview.options[i];
- const amount=document.createElement('strong');amount.className='xl20-teaser-price';
- amount.textContent='≈ $'+Math.round(range.rangeLow/1000)+'–'+Math.round(range.rangeHigh/1000)+' mil';
- const period=document.createElement('small');period.className='xl20-teaser-unit';period.textContent='MXN '+unit+' · estimación ilustrativa';
- a.append(b,h,amount,period,p,f);return a;}));
+ const connectedActions=isAdvisory?['Revisión de materiales y propuestas','Una sesión adicional para resolver decisiones'] : second?
+  [`Plan coordinado: ${main} + ${second}`,'Acciones definidas y seguimiento de avances'] :
+  [`Plan de trabajo para ${main.toLowerCase()}`,'Desarrollo, ejecución y revisión de avances'];
+ const expandedActions=isAdvisory?['Diagnóstico más profundo y revisión de opciones','Acompañamiento para bajar el plan a tierra'] :
+  ['Varias entregas organizadas por fases','Mayor ritmo de ejecución y coordinación'];
+ const cards=[
+   {tag:'01 / EMPEZAR CON FOCO',title:'Enfocado',why:'Si quieres resolver una prioridad sin montar una operación completa.',includes:actions},
+   {tag:'02 / CONECTAR LO NECESARIO',title:'Conectado',why:second?'Si necesitas que dos disciplinas trabajen juntas.':'Si quieres pasar del plan a una ejecución con continuidad.',includes:connectedActions},
+   {tag:'03 / IR UN PASO MÁS ALLÁ',title:'Expandido',why:'Si tu proyecto pide más entregables, coordinación o etapas.',includes:expandedActions}
+ ];
+ grid.replaceChildren(...cards.map((item,i)=>{
+  const card=document.createElement('article');card.className='xl19-teaser-card';
+  const tag=document.createElement('small');tag.textContent=item.tag;
+  const name=document.createElement('h5');name.textContent=item.title;
+  const priceLabel=document.createElement('span');priceLabel.className='xl21-price-label';priceLabel.textContent='RANGO ESTIMADO';
+  const range=preview.options[i];
+  const amount=document.createElement('strong');amount.className='xl20-teaser-price';
+  amount.textContent='$'+Math.round(range.rangeLow/1000)+'–'+Math.round(range.rangeHigh/1000)+' mil';
+  const period=document.createElement('small');period.className='xl20-teaser-unit';period.textContent='MXN '+unit;
+  const why=document.createElement('p');why.className='xl21-why';why.textContent=item.why;
+  const includesLabel=document.createElement('div');includesLabel.className='xl21-includes-label';includesLabel.textContent='Podría incluir';
+  const list=document.createElement('ul');list.className='xl21-includes';
+  item.includes.forEach(copy=>{const li=document.createElement('li');li.textContent=copy;list.appendChild(li)});
+  card.append(tag,name,priceLabel,amount,period,why,includesLabel,list);
+  return card;
+ }));
 }
+
 const xl19Choices={advisory:{model:'advisory',duration:'Por definir'},campaign:{model:'campaign',duration:'1 mes'},project:{model:'project',duration:'2–3 meses'},retainer:{model:'retainer',duration:'Por definir'}};
 document.querySelectorAll('[data-quick-format]').forEach(btn=>btn.addEventListener('click',()=>{
  const choice=xl19Choices[btn.dataset.quickFormat];if(!choice)return;
