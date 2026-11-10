@@ -55,3 +55,143 @@
 @media(max-width:1100px){.main-nav .nav-btn{padding-left:7px;padding-right:7px}.xl22-scope-details{gap:8px}}
 @media(max-width:800px){.xl22-glossary-head{grid-template-columns:1fr;gap:13px}.xl22-terms{grid-template-columns:1fr}.xl22-term-text strong{font-size:21px}}
 @media(max-width:570px){.xl22-glossary-view{padding:30px 0 52px}.xl22-glossary-head h2{font-size:38px}.xl22-gloss-tools{align-items:stretch}.xl22-filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.xl22-filter{padding:10px 7px}.xl22-search{width:100%;max-width:none}.xl22-term summary{padding:16px}.xl22-term-body{padding:0 16px 17px}.xl22-term-lanes{grid-template-columns:1fr}.xl22-glossary-outro{flex-direction:column;align-items:start;padding:22px}.xl22-glossary-outro button{width:100%}}
+
+
+/* XL23 · two editorial backgrounds, quiet spacing and optional Q&A · 2026-11-10 */
+.xl23-theme-switch{display:inline-flex;gap:2px;align-items:center;flex-shrink:0;padding:3px;border:1px solid #a9b8ac;background:#e9eee7;border-radius:999px;margin-left:5px}
+.xl23-theme-switch button{border:0;background:transparent;color:#496052;border-radius:999px;padding:7px 10px;font:750 10px/1.1 "Manrope",system-ui,sans-serif;letter-spacing:.01em;min-height:28px}
+.xl23-theme-switch button[aria-pressed="true"]{background:#31473b;color:#fff;box-shadow:0 1px 3px #1e362224}
+.xl23-theme-switch button:focus-visible{outline:2px solid #d9805b;outline-offset:2px}
+.xl23-nav-faq{white-space:nowrap}
+.neo-lede{max-width:470px;line-height:1.52}
+.v15-journey{padding-block:43px 50px}
+.v15-route{min-height:188px;padding:22px}
+.v15-route strong{margin-top:12px}
+.v15-route b{padding-top:16px}
+.v15-journey-head p{max-width:350px;line-height:1.5}
+.xl23-faq{margin-top:8px;padding:84px 0 76px;background:#e9eee8;color:#263d31;border-top:1px solid #cdd8cf;scroll-margin-top:80px}
+.xl23-faq-inner{display:grid;grid-template-columns:minmax(260px,.83fr) minmax(0,1.17fr);gap:clamp(28px,6vw,96px);align-items:start}
+.xl23-faq-intro{position:sticky;top:112px}
+.xl23-faq-intro .overline{color:#96513a;letter-spacing:.12em;font-size:10px}
+.xl23-faq h2{font:750 clamp(42px,5.1vw,76px)/.99 "Space Grotesk",system-ui,sans-serif;letter-spacing:-.075em;max-width:540px;color:#294336;margin:18px 0 19px}
+.xl23-faq h2 em{font:italic 400 .93em/1 Georgia,serif;color:#aa573a;letter-spacing:-.055em}
+.xl23-faq-intro>p{font-size:15px;line-height:1.6;max-width:380px;color:#496353;margin:0 0 22px}
+.xl23-faq-gloss{padding:0 0 7px;border:0;border-bottom:1px solid #a75e46;background:transparent;color:#8b432c;font:750 12px "Manrope",system-ui,sans-serif}
+.xl23-faq-questions{border-top:1px solid #afc1b4}
+.xl23-faq-questions details{border-bottom:1px solid #afc1b4;padding:0 4px}
+.xl23-faq-questions details[open]{background:#f8f6ef}
+.xl23-faq-questions summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:22px;padding:22px 14px 22px 8px;font:720 clamp(17px,1.65vw,22px)/1.32 "Space Grotesk",system-ui,sans-serif;letter-spacing:-.035em;color:#294638}
+.xl23-faq-questions summary::-webkit-details-marker{display:none}
+.xl23-faq-questions summary::after{content:"+";font:400 27px/1 Georgia,serif;color:#aa5837;flex-shrink:0;transition:transform .18s}
+.xl23-faq-questions details[open] summary::after{content:"−"}
+.xl23-faq-questions summary:hover{color:#a15537}
+.xl23-faq-questions details p{color:#445d4c;font:500 14px/1.7 "Manrope",system-ui,sans-serif;margin:0;padding:0 46px 22px 9px;max-width:660px}
+.xl23-faq-bottom{margin-top:32px;display:flex;align-items:center;justify-content:space-between;gap:22px;border-top:1px solid #afc1b4;padding-top:20px}
+.xl23-faq-bottom span{font:italic 400 clamp(22px,2.6vw,32px) Georgia,serif;color:#315042}
+.xl23-faq-bottom button{background:#314b3d;color:#f9f5ec;border:1px solid #314b3d;padding:13px 20px;font:800 12px "Manrope",system-ui,sans-serif}
+.xl23-faq-bottom button:hover{background:#a75e41;border-color:#a75e41}
+@media(min-width:861px){
+ .main-nav .nav-btn[data-nav="glosario"],.main-nav .nav-btn[data-nav="usos"],.main-nav .nav-btn[data-nav="ecosistema"],.main-nav .nav-btn[data-nav="nosotras"]{display:none}
+}
+@media(max-width:1100px) and (min-width:861px){
+ .brand-sub{display:none}
+ .brand-name{font-size:19px}
+ .header-inner{gap:7px}
+ .xl23-theme-switch button{padding:7px}
+ .main-nav .nav-btn{padding-inline:7px}
+}
+@media(max-width:860px){
+ .xl23-theme-switch{margin-left:auto}
+ .main-nav{max-height:calc(100svh - 90px);overflow-y:auto}
+ .xl23-faq{padding:58px 0 62px}
+ .xl23-faq-inner{grid-template-columns:1fr;gap:24px}
+ .xl23-faq-intro{position:static}
+ .xl23-faq-intro>p{max-width:620px}
+}
+@media(max-width:570px){
+ .brand-name{font-size:18px}
+ .header-inner{gap:8px}
+ .xl23-theme-switch{padding:2px}
+ .xl23-theme-switch button{font-size:10px;padding:8px}
+ .header-mini-cta{display:none!important}
+ .v15-journey{padding-block:36px 38px}
+ .xl23-faq{padding:45px 0 92px;scroll-margin-top:64px}
+ .xl23-faq h2{font-size:clamp(43px,10vw,61px)}
+ .xl23-faq-questions summary{font-size:18px;padding:19px 8px}
+ .xl23-faq-questions details p{font-size:13px;padding:0 14px 20px 8px}
+ .xl23-faq-bottom{flex-direction:column;align-items:flex-start}
+ .xl23-faq-bottom button{width:100%}
+}
+
+/* Dark is a forest-and-cream editorial alternative; accent colors stay recognizably ours. */
+html[data-xl23-theme="dark"]{
+ color-scheme:dark;
+ --paper:#13241d;--ivory:#20352a;--ink:#f3f0e6;--quiet:#bbcabd;--stroke:#3e574a;
+ --forest:#1c362b;--forest-deep:#d6e6d5;--mist:#2a4033;
+ --terracotta:#f3a078;--terra-dark:#de845c;--terra-pale:#eebea4;
+}
+html[data-xl23-theme="dark"] body{background:#13241d;color:#eaf0e6}
+html[data-xl23-theme="dark"] .site-header{background:rgba(18,35,27,.97);border-color:#42604d}
+html[data-xl23-theme="dark"] .brand,html[data-xl23-theme="dark"] .brand-name,html[data-xl23-theme="dark"] .nav-btn:not(.nav-cta),html[data-xl23-theme="dark"] .hamburger{color:#f3f0e6}
+html[data-xl23-theme="dark"] .brand-sub{color:#aac0af}
+html[data-xl23-theme="dark"] .nav-btn:not(.nav-cta):hover,html[data-xl23-theme="dark"] .nav-btn[aria-current="page"]:not(.nav-cta){background:#2b4435;color:#fff}
+html[data-xl23-theme="dark"] .nav-cta{background:#f2a076!important;color:#202c26!important}
+html[data-xl23-theme="dark"] .xl23-theme-switch{background:#253d31;border-color:#5e7b68}
+html[data-xl23-theme="dark"] .xl23-theme-switch button{color:#ccdbcf}
+html[data-xl23-theme="dark"] .xl23-theme-switch button[aria-pressed="true"]{color:#1e3026;background:#f4eee0}
+html[data-xl23-theme="dark"] .site-footer{background:#13241d;color:#b8c9b9;border-color:#3b5846}
+html[data-xl23-theme="dark"] .footer-inner button{color:#f3f0e6}
+html[data-xl23-theme="dark"] .main-nav.open{background:#172d22;border-color:#42604d}
+html[data-xl23-theme="dark"] .view-home,html[data-xl23-theme="dark"] .view:not(.view-home){background:#13241d;color:#e8eee4}
+html[data-xl23-theme="dark"] .neo-hero{background:radial-gradient(circle at 4% 1%,#2f5040 0,transparent 43%),linear-gradient(135deg,#14261f,#1b3429 65%,#213b34)}
+html[data-xl23-theme="dark"] .neo-hero:before{opacity:.45}
+html[data-xl23-theme="dark"] .neo-kicker{color:#c6d4c5}
+html[data-xl23-theme="dark"] .neo-display{color:#f0f2e9}
+html[data-xl23-theme="dark"] .neo-display em{color:#f3ab7c}
+html[data-xl23-theme="dark"] .neo-lede,html[data-xl23-theme="dark"] .neo-lede strong{color:#d7e2d5}
+html[data-xl23-theme="dark"] .neo-btn-dark{background:#f49b6d;color:#1a3124;border-color:#f49b6d}
+html[data-xl23-theme="dark"] .neo-btn-line{border-color:#87a996;color:#f4eee4}
+html[data-xl23-theme="dark"] .neo-text-link{color:#f8bf99}
+html[data-xl23-theme="dark"] .xl20-hero-price{color:#f0dfc7;border-color:#627d6b}
+html[data-xl23-theme="dark"] .neo-canvas{box-shadow:16px 17px 0 #3d594d}
+html[data-xl23-theme="dark"] .v15-journey-head h2,html[data-xl23-theme="dark"] .v15-journey-head p{color:#f2f1e8}
+html[data-xl23-theme="dark"] .v15-journey-head h2 em{color:#f7aa7b}
+html[data-xl23-theme="dark"] .v15-route:not(.v15-route-accent){background:#243a2e;color:#f3eee3;border-color:#496854}
+html[data-xl23-theme="dark"] .v15-route:not(.v15-route-accent) strong,html[data-xl23-theme="dark"] .v15-route:not(.v15-route-accent) b{color:#f6f0e5}
+html[data-xl23-theme="dark"] .v15-route:not(.v15-route-accent) small{color:#c3d2c3}
+html[data-xl23-theme="dark"] .v15-route:not(.v15-route-accent)>span{color:#f0aa84}
+html[data-xl23-theme="dark"] .xl19-formats,html[data-xl23-theme="dark"] .v15-sheet-strip{background:#23392d;border-color:#486450;color:#f4f0e6}
+html[data-xl23-theme="dark"] .xl19-formats-copy p,html[data-xl23-theme="dark"] .v15-sheet-strip small{color:#c5d5c5}
+html[data-xl23-theme="dark"] .xl19-format-choices button{background:#193327;color:#f5f2e7;border-color:#708b77}
+html[data-xl23-theme="dark"] .v15-sheet-link{background:#f0e8d7;color:#24402e}
+html[data-xl23-theme="dark"] .page-head{border-color:#425e4c}
+html[data-xl23-theme="dark"] .page-head .display,html[data-xl23-theme="dark"] .page-head p{color:#e9eee4}
+html[data-xl23-theme="dark"] .page-head .accent{color:#ffa679}
+html[data-xl23-theme="dark"] .view .overline.muted{color:#b0c3b4}
+html[data-xl23-theme="dark"] .xl22-glossary-view{background:#13241d}
+html[data-xl23-theme="dark"] .xl22-glossary-head{border-color:#405e4b}
+html[data-xl23-theme="dark"] .xl22-glossary-head h2,html[data-xl23-theme="dark"] .xl22-glossary-head p{color:#e9eee4}
+html[data-xl23-theme="dark"] .xl22-glossary-head h2 em{color:#f1a47c}
+html[data-xl23-theme="dark"] .xl22-filter{background:#23392c;color:#e6eee3;border-color:#516955}
+html[data-xl23-theme="dark"] .xl22-filter[aria-pressed="true"]{background:#f5ac81;color:#26362a;border-color:#f5ac81}
+html[data-xl23-theme="dark"] .xl22-search{background:#243d2f;color:#f6f0e6;border-color:#55745f}
+html[data-xl23-theme="dark"] .xl22-term{background:#23392d;border-color:#4d6854}
+html[data-xl23-theme="dark"] .xl22-term-text strong,html[data-xl23-theme="dark"] .xl22-term-definition{color:#eaf0e6}
+html[data-xl23-theme="dark"] .xl22-term-text span,html[data-xl23-theme="dark"] .xl22-term-text small,html[data-xl23-theme="dark"] .xl22-term-footer span{color:#c4d4c5}
+html[data-xl23-theme="dark"] .xl22-term-body{border-color:#49624f}
+html[data-xl23-theme="dark"] .xl22-term-lane{background:#2e4739}
+html[data-xl23-theme="dark"] .xl22-term-lane:last-child{background:#48382f}
+html[data-xl23-theme="dark"] .xl22-term-lane b,html[data-xl23-theme="dark"] .xl22-term-lane p{color:#e8eee5}
+html[data-xl23-theme="dark"] .xl22-crosslink button{background:#243d2e;color:#eaf2e9;border-color:#5c7660}
+html[data-xl23-theme="dark"] .xl22-crosslink strong{color:#c1d2c2}
+html[data-xl23-theme="dark"] .xl23-faq{background:#1d3328;border-color:#3e5a48;color:#f0eee4}
+html[data-xl23-theme="dark"] .xl23-faq h2,html[data-xl23-theme="dark"] .xl23-faq-bottom span{color:#f2f0e8}
+html[data-xl23-theme="dark"] .xl23-faq h2 em{color:#f5b28b}
+html[data-xl23-theme="dark"] .xl23-faq-intro>p{color:#c3d6c5}
+html[data-xl23-theme="dark"] .xl23-faq-intro .overline,html[data-xl23-theme="dark"] .xl23-faq-gloss{color:#f0ae8b}
+html[data-xl23-theme="dark"] .xl23-faq-questions,html[data-xl23-theme="dark"] .xl23-faq-questions details,html[data-xl23-theme="dark"] .xl23-faq-bottom{border-color:#496857}
+html[data-xl23-theme="dark"] .xl23-faq-questions summary{color:#f3f2e9}
+html[data-xl23-theme="dark"] .xl23-faq-questions details[open]{background:#284435}
+html[data-xl23-theme="dark"] .xl23-faq-questions details p{color:#c5d9c7}
+html[data-xl23-theme="dark"] .xl23-faq-bottom button{background:#f4a375;color:#233a2c;border-color:#f4a375}
+@media(prefers-reduced-motion:reduce){.xl23-faq-questions summary::after{transition:none}}
