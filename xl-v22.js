@@ -18,23 +18,9 @@ const outcomes=[
  'Responsabilidad integral sobre el programa definido: plan de trabajo, entregas, coordinación y entre tres y cinco KPIs, según alcance.'
 ];
 function info(model,i){return {rhythm:(cadence[model]||cadence.project)[i],owner:responsibilities[i],result:outcomes[i]};}
+// The public comparison shows prices and a concise scope; the full delivery breakdown lives in step 4.
 const originalPreview=renderScopePreview;
-renderScopePreview=function(){
- originalPreview();
- const d=readQuote();
- document.querySelectorAll('#xl19-teaser-grid .xl19-teaser-card').forEach((card,i)=>{
-  const m=info(d.model,i);
-  const detail=document.createElement('div');detail.className='xl22-scope-details';
-  [['Ritmo de trabajo',m.rhythm],['Quién ejecuta',m.owner],['Entregables y medición',m.result]].forEach(([label,value])=>{
-    const wrap=document.createElement('div');
-    const l=document.createElement('span');l.className='xl22-detail-label';l.textContent=label;
-    const v=document.createElement('span');v.className='xl22-detail-value';v.textContent=value;
-    wrap.append(l,v);detail.append(wrap);
-  });
-  const note=document.createElement('small');note.className='xl22-scope-note';note.textContent='Ejemplo de alcance, no compromiso cerrado. Lo ajustamos al presupuesto, capacidad y objetivos.';detail.append(note);
-  card.append(detail);
- });
-};
+renderScopePreview=function(){originalPreview();};
 const originalRenderQuote=renderQuote;
 renderQuote=function(result){
  originalRenderQuote(result);
