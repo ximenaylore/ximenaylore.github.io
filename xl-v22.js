@@ -98,97 +98,41 @@ if(step===3)renderScopePreview();
 if(step===4&&lastResult)renderQuote(lastResult);
 })();
 
-/* XL23 · lighter editorial journey, theme choice & practical Q&A · 2026-11-10 */
+/* XL24 · theme selector and accessible progressive-disclosure navigation · 2026-11-10 */
 (function(){
   'use strict';
-  const q=(selector,root=document)=>root.querySelector(selector);
-  const setText=(selector,value)=>{const el=q(selector);if(el)el.textContent=value;};
-  const setHtml=(selector,value)=>{const el=q(selector);if(el)el.innerHTML=value;};
-
-  // Keep original quote, Tally, experience evidence, downloadable PDF and creative universes.
-  setHtml('.neo-lede','Cada negocio tiene su momento. <strong>Empezamos por lo que hoy necesitas, no por todo lo que podríamos venderte.</strong>');
-  setText('.v15-journey-head p','Una necesidad, una campaña o un plan más amplio. Lo decidimos contigo.');
-  setText('.v15-route[data-nav="problemas"] small','Cuéntanos qué quieres resolver.');
-  setText('.v15-route[data-nav="servicios"] small','Activa solo lo que te ayude hoy.');
-  setText('.v15-route[data-nav="diagnostico"] small','Explora tres alcances orientativos.');
-  setText('.xl19-formats-copy p','Una sesión, una campaña, un proyecto o mes a mes.');
-  setText('.v15-sheet-strip small','Nuestra forma de pensar, priorizar y activar.');
-  setText('#problemas .page-head p','Tú nos cuentas el reto. Nosotras te ayudamos a encontrar por dónde empezar.');
-  setText('#servicios .page-head p','Una disciplina o varias. Solo las que aporten valor en este momento.');
-  setText('#usos .page-head p','Situaciones reales, soluciones posibles. Sin receta única.');
-  setText('#nosotras .page-head p','Trato directo con quienes piensan y ejecutan tu estrategia.');
-  setText('#contacto .page-head p','Cuéntanos qué tienes en mente. Empezamos por una conversación.');
-  setText('#diagnostico > .container > .page-head p','Explora tres alcances e inversiones orientativas. Sin compromiso.');
-  setText('#glosario .xl22-glossary-head p','Qué significa cada servicio, cuándo conviene y cuándo puede esperar.');
-  setText('#glosario .xl22-glossary-outro p','Primero el objetivo. Después, los canales.');
-
-  // Make the header calmer without deleting existing destinations.
-  const nav=q('#main-nav');
-  if(nav){
-    const faqNav=document.createElement('button');
-    faqNav.type='button';
-    faqNav.className='nav-btn xl23-nav-faq';
-    faqNav.textContent='Preguntas';
-    faqNav.setAttribute('aria-label','Ir a preguntas frecuentes');
-    faqNav.addEventListener('click',()=>{
-      navigate('inicio',false);
-      requestAnimationFrame(()=>q('#preguntas')?.scrollIntoView({behavior:'smooth',block:'start'}));
-    });
-    const cta=q('.nav-cta',nav);
-    if(cta)nav.insertBefore(faqNav,cta);else nav.append(faqNav);
-  }
-
-  const header=q('.header-inner');
-  if(header){
-    const control=document.createElement('div');
+  const header=document.querySelector('.header-inner');
+  if(!header)return;
+  let control=header.querySelector('.xl23-theme-switch');
+  if(!control){
+    control=document.createElement('div');
     control.className='xl23-theme-switch';
     control.setAttribute('role','group');
     control.setAttribute('aria-label','Elegir fondo del sitio');
     control.innerHTML='<button type="button" data-xl23-theme="light">Claro</button><button type="button" data-xl23-theme="dark">Oscuro</button>';
-    const mini=q('.header-mini-cta',header);
-    header.insertBefore(control,mini||null);
-    const applyTheme=(name)=>{
-      const value=name==='dark'?'dark':'light';
-      document.documentElement.setAttribute('data-xl23-theme',value);
-      document.querySelector('meta[name="theme-color"]')?.setAttribute('content',value==='dark'?'#14251e':'#f6f3ec');
-      control.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.xl23Theme===value)));
-      try{localStorage.setItem('xl23-theme',value)}catch(error){}
-    };
-    let stored='light';
-    try{stored=localStorage.getItem('xl23-theme')||'light'}catch(error){}
-    applyTheme(stored);
-    control.addEventListener('click',event=>{
-      const button=event.target.closest('[data-xl23-theme]');
-      if(button)applyTheme(button.dataset.xl23Theme);
-    });
+    header.insertBefore(control,header.querySelector('.header-mini-cta'));
   }
-
-  // Accordion keeps answers optional: no new wall of copy on first load.
-  const home=q('#inicio');
-  if(home&&!q('#preguntas')){
-    const faq=document.createElement('section');
-    faq.id='preguntas';
-    faq.className='xl23-faq';
-    faq.setAttribute('aria-labelledby','xl23-faq-heading');
-    faq.innerHTML=[
-      '<div class="container xl23-faq-inner">',
-      '<div class="xl23-faq-intro">',
-      '<span class="overline">PREGUNTAS REALES / RESPUESTAS CLARAS</span>',
-      '<h2 id="xl23-faq-heading">No tienes que <em>hacerlo todo.</em></h2>',
-      '<p>Entendemos en qué momento está tu negocio. A veces conviene activar una campaña. A veces, ordenar primero la idea.</p>',
-      '<button type="button" class="xl23-faq-gloss" data-nav="glosario">Ver el glosario completo ↗</button>',
-      '</div><div class="xl23-faq-questions">',
-      '<details><summary>¿Qué es influencer marketing?</summary><p>Colaborar con creadores que conectan con la audiencia que quieres alcanzar. Importa más la afinidad y la credibilidad que el número de seguidores.</p></details>',
-      '<details><summary>¿Qué es UGC?</summary><p>Contenido con lenguaje de usuario: reseñas, demos o videos de producto. Puede crearlo alguien contratado sin publicarlo en sus propias redes. Su uso y sus derechos se acuerdan aparte.</p></details>',
-      '<details><summary>¿Cuándo me conviene una estrategia de influencers?</summary><p>Cuando ya tienes claro qué ofreces y a quién quieres llegar. Si aún estás probando tu mensaje, puede convenir validarlo antes de amplificarlo.</p></details>',
-      '<details><summary>¿UGC o influencers? ¿Cuál necesito?</summary><p>¿Necesitas contenido para tus canales? Empezaría por UGC. ¿Quieres llegar a nuevas comunidades? Valoremos creadores con audiencia. No siempre hacen falta ambos.</p></details>',
-      '<details><summary>¿Tengo que contratar PR, social, creadores y paid a la vez?</summary><p>No. Elegimos la prioridad según tu objetivo, tus recursos y tu momento. Lo que no aporte ahora, puede esperar.</p></details>',
-      '<details><summary>¿Y si mi presupuesto es pequeño?</summary><p>Acotamos el trabajo: una sesión, una propuesta concreta o un piloto medible. Menos frentes, más foco. La inversión depende del alcance real.</p></details>',
-      '<details><summary>¿Puedo empezar solo con una campaña o asesoría?</summary><p>Sí. No necesitas un retainer ni un plan integral. Podemos empezar con un proyecto puntual y decidir después si tiene sentido seguir.</p></details>',
-      '<details><summary>¿Los honorarios incluyen pauta y fees de creadores?</summary><p>Se contemplan por separado. También la producción, los derechos de uso o proveedores externos. Te diremos qué incluye cada propuesta.</p></details>',
-      '</div></div>',
-      '<div class="container xl23-faq-bottom"><span>Empecemos por lo que sí necesitas.</span><button type="button" data-nav="diagnostico">Diseña tu brief ↗</button></div>'
-    ].join('');
-    home.append(faq);
-  }
+  const applyTheme=name=>{
+    const value=name==='dark'?'dark':'light';
+    document.documentElement.setAttribute('data-xl23-theme',value);
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content',value==='dark'?'#14251e':'#f6f3ec');
+    control.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.xl23Theme===value)));
+    try{localStorage.setItem('xl23-theme',value)}catch(error){}
+  };
+  let chosen='light';try{chosen=localStorage.getItem('xl23-theme')||'light'}catch(error){}
+  applyTheme(chosen);
+  control.addEventListener('click',event=>{
+    const b=event.target.closest('[data-xl23-theme]');
+    if(b)applyTheme(b.dataset.xl23Theme);
+  });
+  // Keep all eight native <details> FAQs readable with keyboard / screen reader.
+  document.querySelectorAll('#preguntas details').forEach(d=>{
+    const summary=d.querySelector('summary');if(summary)summary.setAttribute('aria-label',summary.textContent.trim());
+  });
+  // Public reference images stay readable as typography when an external capture fails.
+  document.querySelectorAll('.archive-image img, #use-media').forEach(img=>{
+    const failed=()=>{img.classList.add('no-archive-image');img.removeAttribute('src');img.closest('.archive-image, .use-media-wrap')?.classList.add('xl24-image-unavailable');};
+    img.addEventListener('error',failed,{once:true});
+    if(img.complete && img.src && img.naturalWidth===0)failed();
+  });
 })();
