@@ -195,3 +195,167 @@ html[data-xl23-theme="dark"] .xl23-faq-questions details[open]{background:#28443
 html[data-xl23-theme="dark"] .xl23-faq-questions details p{color:#c5d9c7}
 html[data-xl23-theme="dark"] .xl23-faq-bottom button{background:#f4a375;color:#233a2c;border-color:#f4a375}
 @media(prefers-reduced-motion:reduce){.xl23-faq-questions summary::after{transition:none}}
+
+
+/* XL24 · focused commercial UX, premium editorial art direction · 2026-11-10 */
+:root{--xl24-highlight:#b65e40}
+.neo-hero{min-height:0!important;justify-content:initial}
+.neo-hero-grid{min-height:0!important;padding-top:clamp(27px,4vw,48px)!important;padding-bottom:clamp(22px,3.3vw,39px)!important;grid-template-columns:minmax(0,1.13fr) minmax(0,.87fr);gap:clamp(28px,3vw,45px)}
+.neo-hero-copy{max-width:685px}
+.neo-kicker{margin-bottom:20px}
+.neo-display,.neo-hero .neo-display{font-size:clamp(40px,4.35vw,65px)!important;line-height:1.055;letter-spacing:-.078em;max-width:670px;margin-bottom:17px;text-wrap:balance}
+.neo-display em{display:block;font:italic 400 .87em/1.07 Georgia,serif;letter-spacing:-.052em;color:#ac593d}
+.neo-lede{max-width:520px;font-size:clamp(14px,1.2vw,17px)!important;color:#395246;line-height:1.62;margin-bottom:9px}
+.neo-lede strong{font-weight:750}
+.xl24-hero-note{font:600 13px/1.55 "Manrope",system-ui,sans-serif;color:#7b553f;max-width:540px;margin:0 0 25px}
+.neo-buttons{margin-bottom:0!important;gap:10px;align-items:stretch}
+.neo-buttons .neo-btn{font-size:12px;min-height:47px;padding:12px 17px}
+.neo-canvas{height:365px;min-height:365px!important;max-height:365px!important;box-shadow:11px 12px 0 #cdd8ce;overflow:hidden}
+.neo-canvas-top{font-size:8px}
+.signal-heading small{font-size:10px}
+.signal-index{font-size:9px}
+.neo-sticker-orange{background:#f1a87d!important;color:#26372d!important}
+.neo-pill-sky{background:#c9dfd5!important;color:#244132!important}
+.neo-sticker{font-size:15px!important}
+.neo-canvas-footer{font-size:9px}
+.neo-ticker{min-height:34px}
+.neo-ticker .ticker-run{font-size:11px;padding:9px 0}
+.neo-ticker .ticker-run span{padding:0 13px}
+.xl24-home-proof{background:#e4eae2;border-block:1px solid #c3d1c4;padding:23px 0 27px}
+.xl24-home-proof-title{display:flex;gap:16px;justify-content:space-between;align-items:center;margin-bottom:17px}
+.xl24-home-proof-title .overline{color:#8d513c;letter-spacing:.13em}
+.xl24-home-proof-title p{margin:0;font:600 12px "Manrope",sans-serif;color:#41604d}
+.xl24-home-proof-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #b8c9b8;border-bottom:1px solid #b8c9b8}
+.xl24-home-proof-grid article{padding:17px 25px 15px 0}
+.xl24-home-proof-grid article+article{border-left:1px solid #b8c9b8;padding-left:25px}
+.xl24-home-proof-grid span{display:block;font:750 10px "DM Mono",monospace;letter-spacing:.065em;color:#7f503c;margin-bottom:8px}
+.xl24-home-proof-grid strong{display:block;font:750 clamp(22px,2.4vw,32px)/1.1 "Space Grotesk",system-ui,sans-serif;letter-spacing:-.055em;color:#213c2d}
+.xl24-home-proof-grid p{font:500 11px/1.57 "Manrope",sans-serif;color:#425b4a;max-width:320px;margin:8px 0 0}
+.xl24-proof-caption{font:500 10px/1.5 "Manrope",sans-serif;color:#557060;margin:14px 0 9px}
+.xl24-proof-cta{border:0;border-bottom:1px solid #a45338;color:#9b4c32;background:transparent;font:750 12px "Manrope",sans-serif;padding:3px 0 7px}
+.v15-journey{padding:49px 0 57px}
+.v15-journey-head h2{font-size:clamp(35px,4vw,56px)}
+.v15-journey-head p{font-size:13px}
+.xl24-how-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:15px 0 26px}
+.xl24-how-grid article{border-top:2px solid #365344;padding:18px 18px 12px 1px}
+.xl24-how-grid span{display:block;font:750 10px "DM Mono",monospace;letter-spacing:.09em;color:#ae5c41;margin-bottom:10px}
+.xl24-how-grid strong{font:750 clamp(22px,2.3vw,31px)/1.1 "Space Grotesk",system-ui,sans-serif;letter-spacing:-.05em;color:#264335;display:block}
+.xl24-how-grid p{font:500 12px/1.55 "Manrope",system-ui,sans-serif;color:#5c7061;margin:7px 0 0}
+.xl19-formats{margin-top:10px}
+.site-header .header-mini-cta{display:none!important}
+.desktop-action-dock,.mobile-contact-dock{display:none!important}
+.xl23-theme-switch{margin-left:auto}
+.site-footer{padding-bottom:0}
+.founder-card{grid-template-columns:44% 56%;min-height:360px}
+.xl24-founder-art{min-height:360px;position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:23px 18px;color:#f4ecdf;background:#203f32}
+.xl24-founder-art-lore{background:#a6573c}
+.xl24-founder-art:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#fff1 1px,transparent 1px),linear-gradient(90deg,#fff1 1px,transparent 1px);background-size:33px 33px;z-index:-1}
+.xl24-art-index,.xl24-art-foot{font:750 9px/1.4 "DM Mono",monospace;letter-spacing:.1em;color:#f6e8d8}
+.xl24-founder-art strong{font:800 clamp(21px,2vw,31px)/1.02 "Space Grotesk",sans-serif;letter-spacing:-.07em;display:flex;flex-direction:column;align-items:flex-start;gap:5px;position:relative;z-index:2}
+.xl24-founder-art strong small{font:400 32px/.7 Georgia,serif;color:#f6b68b}
+.xl24-art-trace{position:absolute;left:11%;top:25%;right:9%;bottom:19%;pointer-events:none}
+.xl24-art-trace i{position:absolute;display:block;border:2px solid #f4e7d6b5;width:58%;aspect-ratio:1;border-radius:50%;transform:rotate(20deg)}
+.xl24-art-trace i:first-child{top:-8%;left:5%;border-radius:50% 50% 50% 5%}
+.xl24-art-trace i:last-child{top:13%;right:0;border-color:#f8b48b;border-radius:50% 5% 50% 50%}
+.xl24-founder-art-lore .xl24-art-trace i:last-child{border-color:#dff2d9}
+.xl24-founder-art-lore strong small{color:#e0f3d9}
+.xl24-quote-optional{border:1px solid #ccd5c9;margin:16px 0;background:#f6f5ee}
+.xl24-quote-optional>summary{list-style:none;cursor:pointer;padding:15px 17px;color:#304738;font:750 12px/1.4 "Manrope",sans-serif;display:flex;align-items:center;justify-content:space-between}
+.xl24-quote-optional>summary::after{content:"+";font:400 22px Georgia,serif;color:#a9593d}
+.xl24-quote-optional[open]>summary::after{content:"−"}
+.xl24-quote-optional-inner{padding:8px 17px 12px}
+.xl24-quote-optional .budget-quiet{margin-bottom:12px}
+.xl19-teaser{margin:14px 0 19px;padding:18px}
+.xl19-teaser-heading h4{font-size:clamp(26px,2.8vw,37px)}
+.xl19-teaser-heading p{max-width:430px}
+.xl18-email-checkpoint{margin-top:18px}
+.inbound-intro h3{font-size:clamp(34px,4vw,54px)}
+.xl24-schedule-optional{border:1px solid #cad6c9;padding:10px 14px;background:#f6f7f1}
+.xl24-schedule-optional summary{font:750 12px "Manrope",sans-serif;cursor:pointer;padding:8px 0;color:#335443}
+.xl24-schedule-optional fieldset{margin-top:9px}
+.inbound-form .slot-grid{margin-top:8px}
+.xl24-image-unavailable .archive-photo-fallback{display:flex!important}
+.archive-image img.no-archive-image,.xl24-image-unavailable img{display:none!important}
+.xl24-image-unavailable.use-media-wrap .use-media-graphic{display:flex!important}
+#preguntas summary:focus-visible{outline:2px solid #b65e40;outline-offset:4px}
+@media(max-width:1100px){
+ .neo-hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,.92fr)}
+ .neo-display,.neo-hero .neo-display{font-size:clamp(40px,4.75vw,57px)!important}
+ .neo-canvas{height:344px;min-height:344px!important;max-height:344px!important}
+}
+@media(max-width:860px){
+ .neo-hero-grid{grid-template-columns:1fr!important;gap:24px!important}
+ .neo-hero-copy{max-width:100%}
+ .neo-display,.neo-hero .neo-display{font-size:clamp(40px,7vw,63px)!important;max-width:730px}
+ .neo-canvas{width:100%;max-width:620px;height:300px;min-height:300px!important;max-height:300px!important;margin-bottom:4px}
+ .xl24-home-proof-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .xl24-home-proof-grid article{padding-right:12px}
+ .xl24-home-proof-grid article+article{padding-left:12px}
+ .xl24-how-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .xl24-founder-art{min-height:290px}
+ .founder-card{grid-template-columns:40% 60%}
+ .xl24-home-proof-title{align-items:flex-start}
+}
+@media(max-width:650px){
+ body{overflow-x:clip}
+ .neo-hero-grid{padding:28px 0!important;gap:21px!important}
+ .neo-display,.neo-hero .neo-display{font-size:clamp(37px,9vw,55px)!important;line-height:1.045}
+ .neo-lede{font-size:14px!important;line-height:1.55}
+ .xl24-hero-note{font-size:12px;margin-bottom:19px}
+ .neo-buttons{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .neo-buttons .neo-btn{padding:12px 11px;font-size:11px;gap:6px}
+ .neo-canvas{height:238px;min-height:238px!important;max-height:238px!important;box-shadow:7px 8px 0 #cbd8ce}
+ .neo-canvas-top{font-size:7px}
+ .signal-heading{top:24%!important;left:6%!important}
+ .signal-heading strong{margin-top:8px!important}
+ .signal-idea{font-size:clamp(63px,17vw,88px)!important}
+ .signal-personas{font-size:clamp(33px,8vw,43px)!important}
+ .signal-heading small{font-size:7px!important}
+ .signal-route{width:43%!important;max-width:43%!important;right:4%;top:48%!important}
+ .signal-route button{font-size:7px!important;padding:5px 4px!important}
+ .neo-sticker{font-size:9px!important;top:12%!important}
+ .neo-pill{font-size:6px!important}
+ .neo-canvas-footer{font-size:7px!important}
+ .neo-ticker .ticker-run{font-size:10px}
+ .xl24-home-proof{padding:20px 0}
+ .xl24-home-proof-title{flex-direction:column;gap:6px;margin-bottom:12px}
+ .xl24-home-proof-grid{grid-template-columns:1fr;gap:0}
+ .xl24-home-proof-grid article,.xl24-home-proof-grid article+article{border:0;border-bottom:1px solid #b8c9b8;padding:14px 0}
+ .xl24-home-proof-grid article:last-child{border-bottom:0}
+ .xl24-home-proof-grid strong{font-size:27px}
+ .xl24-home-proof-grid p{font-size:12px}
+ .xl24-how-grid{grid-template-columns:1fr;gap:7px;margin:11px 0 18px}
+ .xl24-how-grid article{padding:13px 0}
+ .xl24-how-grid p{margin:5px 0}
+ .v15-journey{padding:35px 0 42px}
+ .founder-grid{grid-template-columns:1fr}
+ .founder-card{grid-template-columns:1fr!important;min-height:0}
+ .xl24-founder-art{min-height:235px}
+ .xl24-founder-art strong{font-size:27px}
+ .founder-info{padding:23px}
+ .xl24-quote-optional-inner{padding:8px 12px 14px}
+ .xl19-teaser{padding:14px}
+ .site-footer{padding-bottom:0}
+ .footer-inner{flex-wrap:wrap}
+}
+html[data-xl23-theme="dark"] .neo-hero .neo-display{color:#f0f2e9}
+html[data-xl23-theme="dark"] .neo-display em{color:#f3b18d}
+html[data-xl23-theme="dark"] .neo-lede{color:#d3dfd0}
+html[data-xl23-theme="dark"] .xl24-hero-note{color:#efb38f}
+html[data-xl23-theme="dark"] .xl24-home-proof{background:#213b2d;border-color:#44614e}
+html[data-xl23-theme="dark"] .xl24-home-proof-title p,html[data-xl23-theme="dark"] .xl24-home-proof-grid p,html[data-xl23-theme="dark"] .xl24-proof-caption{color:#c4d4c3}
+html[data-xl23-theme="dark"] .xl24-home-proof-grid,html[data-xl23-theme="dark"] .xl24-home-proof-grid article+article{border-color:#4b6753}
+html[data-xl23-theme="dark"] .xl24-home-proof-grid strong,html[data-xl23-theme="dark"] .xl24-how-grid strong{color:#f3efe4}
+html[data-xl23-theme="dark"] .xl24-home-proof-grid span,html[data-xl23-theme="dark"] .xl24-home-proof-title .overline,html[data-xl23-theme="dark"] .xl24-how-grid span{color:#f3b18d}
+html[data-xl23-theme="dark"] .xl24-proof-cta{color:#f3b18d}
+html[data-xl23-theme="dark"] .xl24-how-grid article{border-color:#6b8d72}
+html[data-xl23-theme="dark"] .xl24-how-grid p{color:#bacbbd}
+html[data-xl23-theme="dark"] .xl24-quote-optional{background:#284030;border-color:#5f7862}
+html[data-xl23-theme="dark"] .xl24-quote-optional>summary{color:#edf3e9}
+html[data-xl23-theme="dark"] .xl24-schedule-optional{background:#233b2d;border-color:#5b7861}
+html[data-xl23-theme="dark"] .xl24-schedule-optional summary{color:#f3f0e6}
+@media(prefers-reduced-motion:reduce){
+ .neo-ticker .ticker-track{animation:none!important;transform:none!important}
+ .neo-btn,.xl24-proof-cta,.xl24-quote-optional>summary::after,.xl24-art-trace i{animation:none!important;transition:none!important}
+ .neo-canvas:hover .neo-sticker{transform:none!important}
+}
